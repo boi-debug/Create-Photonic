@@ -104,6 +104,7 @@ public class CreatePhotonic
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS)
         {
             event.accept(ModBlocks.Beamer_Block);
+            event.accept(ModBlocks.Fools_Emerald_block);
         }
     }
 

@@ -18,12 +18,13 @@ public class ModCreativeModeTabs {
     public static void Register(IEventBus eventBus){
         Creative_Mode_Tab.register(eventBus);
     }
-    public static final Supplier<CreativeModeTab> Create_Photonic_Tab = Creative_Mode_Tab.register("Create_Photonic_Tab",
+    public static final Supplier<CreativeModeTab> Create_Photonic_Tab = Creative_Mode_Tab.register("create_photonic_tab",
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.Beamer.get()))
-                    .title(Component.translatable("creativetab.createphotonic.CreatePhotonic"))
+                    .title(Component.translatable("Create Photonic"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.Sword);
                         output.accept(ModItems.Beamer);
                         output.accept(ModBlocks.Beamer_Block);
+                        output.accept(ModBlocks.Fools_Emerald_block);
                     }).build());
 }

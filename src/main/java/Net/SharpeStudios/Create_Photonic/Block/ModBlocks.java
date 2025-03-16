@@ -21,6 +21,8 @@ public class ModBlocks {
             DeferredRegister.Blocks.createBlocks(CreatePhotonic.MOD_ID);
     public static final DeferredBlock<Block> Beamer_Block = registerBlock("beamer_block",
             () -> new Block(BlockBehaviour.Properties.of().strength(2).sound(SoundType.STONE)));
+    public static final DeferredBlock<Block> Fools_Emerald_block = registerBlock("fools_emerald",
+            () -> new Block(BlockBehaviour.Properties.of().strength(5).sound(SoundType.AMETHYST_CLUSTER)));
 
     private static <T extends Block> void RegisterBlockItem(String name, DeferredBlock<T> block){
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));

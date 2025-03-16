@@ -14,6 +14,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().durability(100).stacksTo(1)));
     public static final DeferredItem<Item> Beamer = ITEMS.register("beamer",
             () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> Fools_Emerald = ITEMS.register("fools_emerald",
+            () -> new Item(new Item.Properties()));
     public static void Register(IEventBus eventBus)
     {
         ITEMS.register(eventBus);
