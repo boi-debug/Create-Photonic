@@ -61,12 +61,12 @@ public class CreatePhotonic
     {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
+        ModCreativeModeTabs.Register(modEventBus);
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
         ITEMS.register(modEventBus);
-        ModCreativeModeTabs.Register(modEventBus);
+
         // Register the Deferred Register to the mod event bus so tabs get registered
 
         // Register ourselves for server and other game events we are interested in.
