@@ -1,4 +1,5 @@
 {
   "item.createphotonic.sword": "Cool Sword",
-  "item.createphotonic.beamer": "Photon Beamer"
+  "item.createphotonic.beamer": "Incomplete Optical Beamer",
+  "block.createphotonic.beamer_block": "Optical Beamer"
 }

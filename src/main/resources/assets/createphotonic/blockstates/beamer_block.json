@@ -1,0 +1,8 @@
+{
+  "variants":
+  {
+    "": {
+      "model": "createphotonic:block/beamer_block"
+    }
+  }
+}
